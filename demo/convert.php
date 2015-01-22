@@ -11,6 +11,8 @@
 	//Load in the demo docx file
 	$resMyDoc->load($dirDocxFilePath);
 
-	echo 'DocX XML Content:<br><pre>'.$resMyDoc->xml().'</pre><hr>';
+	echo 'DocX HTML Content:<br><pre>'.$resMyDoc->html().'</pre><hr>';
+
+	echo 'DocX XML Content:<br><pre>'.htmlentities($resMyDoc->xml()).'</pre><hr>';
 
 	echo 'DocX Plain Content:<br><pre>'.$resMyDoc->plain().'</pre><hr>';
