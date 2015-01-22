@@ -92,4 +92,20 @@
 			return strip_tags($strPlainContent);
 		}
 
+		/**
+		 * Export the data as formatted HTML
+		 * @return string
+		 * @throws Exception
+		 */
+		public function html(){
+
+			if(is_null($this->dirDocxPath)){
+				throw new Exception("docx2html: A docx file must be loaded before HTML content can be output",6);
+			}
+
+			$strHTML = '';
+
+			return $strHTML;
+		}
+
 	}
