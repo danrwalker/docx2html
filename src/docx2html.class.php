@@ -4,6 +4,7 @@
 	 * Convert docx files into HTML
 	 * @author Dan Walker
 	 * @link http://danrwalker.co.uk
+	 * @reference Used XML to Array conversion taken from TwistPHP Framework (https://twistphp.com)
 	 */
 	class docx2html{
 
